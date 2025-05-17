@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>Macros</key>
+        <array>
+            <dict>
+                <key>Actions</key>
+                <array>
+                    <dict>
+                        <key>ActionUID</key>
+                        <integer>1000</integer>
+                        <key>MacroActionType</key>
+                        <string>ExecuteShellScript</string>
+                        <key>Shell</key>
+                        <string>/bin/bash</string>
+                        <key>Text</key>
+                        <string>python ~/talkwithchatgpt/chat.py</string>
+                        <key>TimeOutAbortsMacro</key>
+                        <true/>
+                        <key>TrimResults</key>
+                        <true/>
+                        <key>UseText</key>
+                        <true/>
+                    </dict>
+                </array>
+                <key>Name</key>
+                <string>Launch Chat CLI</string>
+                <key>Triggers</key>
+                <array>
+                    <dict>
+                        <key>FireType</key>
+                        <string>Pressed</string>
+                        <key>KeyCode</key>
+                        <integer>40</integer>
+                        <key>MacroTriggerType</key>
+                        <string>HotKey</string>
+                        <key>Modifiers</key>
+                        <integer>4352</integer>
+                    </dict>
+                </array>
+                <key>UID</key>
+                <string>CLI-MACRO-UUID</string>
+            </dict>
+        </array>
+        <key>Name</key>
+        <string>Chat CLI Group</string>
+        <key>UID</key>
+        <string>CLI-GROUP-UUID</string>
+    </dict>
+</array>
+</plist>
