@@ -17,4 +17,5 @@ Type your message and press enter. Type `exit` or `quit` to end the conversation
 
 ## Keyboard Maestro Macros
 The file "🎙️Talk with ChatGPT 1.0 Macros.kmmacros" contains a collection of macros for interacting with ChatGPT on macOS.
+A new file `voice_macros.kmmacros` provides two simple macros that use AppleScript GUI scripting to open and close the ChatGPT application's voice dialogue window. Import this file if you want hotkeys for quickly toggling voice chat.
 A helper macro in `chat_cli.kmmacros` launches the Python chat client via a hotkey (Ctrl+Option+K by default). Import the macro set into Keyboard Maestro to use it.
