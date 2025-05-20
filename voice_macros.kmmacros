@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>Macros</key>
+        <array>
+            <dict>
+                <key>Actions</key>
+                <array>
+                    <dict>
+                        <key>ActionUID</key>
+                        <integer>1</integer>
+                        <key>MacroActionType</key>
+                        <string>ExecuteAppleScript</string>
+                        <key>Text</key>
+                        <string>tell application "ChatGPT" to activate
+tell application "System Events"
+    tell process "ChatGPT"
+        -- Adjust the button or menu path to open voice dialogue as needed
+        click button "Voice" of window 1
+    end tell
+end tell
+</string>
+                        <key>TimeOutAbortsMacro</key>
+                        <true/>
+                        <key>TrimResults</key>
+                        <true/>
+                        <key>UseText</key>
+                        <true/>
+                    </dict>
+                </array>
+                <key>Name</key>
+                <string>Open ChatGPT Voice Dialog</string>
+                <key>Triggers</key>
+                <array>
+                    <dict>
+                        <key>FireType</key>
+                        <string>Pressed</string>
+                        <key>KeyCode</key>
+                        <integer>9</integer>
+                        <key>MacroTriggerType</key>
+                        <string>HotKey</string>
+                        <key>Modifiers</key>
+                        <integer>4352</integer>
+                    </dict>
+                </array>
+                <key>UID</key>
+                <string>VOICE-OPEN-UUID</string>
+            </dict>
+            <dict>
+                <key>Actions</key>
+                <array>
+                    <dict>
+                        <key>ActionUID</key>
+                        <integer>2</integer>
+                        <key>MacroActionType</key>
+                        <string>ExecuteAppleScript</string>
+                        <key>Text</key>
+                        <string>tell application "ChatGPT" to activate
+tell application "System Events"
+    tell process "ChatGPT"
+        -- Adjust the button or menu path to close voice dialogue as needed
+        click button "Stop" of window 1
+    end tell
+end tell
+</string>
+                        <key>TimeOutAbortsMacro</key>
+                        <true/>
+                        <key>TrimResults</key>
+                        <true/>
+                        <key>UseText</key>
+                        <true/>
+                    </dict>
+                </array>
+                <key>Name</key>
+                <string>Close ChatGPT Voice Dialog</string>
+                <key>Triggers</key>
+                <array>
+                    <dict>
+                        <key>FireType</key>
+                        <string>Pressed</string>
+                        <key>KeyCode</key>
+                        <integer>13</integer>
+                        <key>MacroTriggerType</key>
+                        <string>HotKey</string>
+                        <key>Modifiers</key>
+                        <integer>4352</integer>
+                    </dict>
+                </array>
+                <key>UID</key>
+                <string>VOICE-CLOSE-UUID</string>
+            </dict>
+        </array>
+        <key>Name</key>
+        <string>ChatGPT Voice</string>
+        <key>UID</key>
+        <string>VOICE-GROUP-UUID</string>
+    </dict>
+</array>
+</plist>
